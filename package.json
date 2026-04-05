@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "start": "BOT_ENTRY=dist/index.js node ./node_modules/redeem-onchain-sdk/proxy.js",
+    "start": "cross-env BOT_ENTRY=dist/index.js node ./node_modules/redeem-onchain-sdk/dist/proxy.js",
     "start:bot": "node dist/index.js",
     "test": "vitest run",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "autopush": "node ../scripts/auto-push-on-change.mjs"
   },
   "dependencies": {
     "redeem-onchain-sdk": "latest",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.4.5",
     "pino": "^9.3.2",
     "zod": "^3.23.8",

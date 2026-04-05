@@ -93,4 +93,4 @@ package.json
 
 ## Status
 
-This repository is presented as a finished starter for immediate extension: the README, folder layout, runtime surface, and deployment path are all in place, while the strategy internals remain intentionally lightweight so the repo stays easy to audit and customize.
+v. 0.1.25.2026-04-07T22:27:08.165Z
